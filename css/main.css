@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@media only screen and (max-width: 415px) {
+  #calculator {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 416px) {
+  #calculator {
+    width: 390px;
+  }
+}
+
+$pad: 10px;
+*,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  padding-left: $pad;
+  padding-right: $pad;
+  &:first-of-type {
+    padding-top: $pad;
+  }
+}
+
+.row:last-of-type {
+  padding-bottom: $pad;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: .5em 0;
+  &:last-of-type {
+    border-right: 1px solid black;
+  }
+  font-size: 2em;
+}
+
+.gray {
+  background-color: rgb(210, 211, 215);
+}
+
+.orange {
+  color: white;
+  background-color: rgb(250, 135, 16);
+}
+
+#calculator {
+  margin: 0 auto;
+  background-color: white;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+#calculator:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#display {
+  float: left;
+  width: 100%;
+  padding: 1em .5em .25em 0;
+  background-color: black;
+  color: white;
+  text-align: right;
+  font-size: 3em;
+}
+
+#zero {
+  width: 50%;
+}
+
+/* Temporary classes (added and removed) */
+
+.darkorange {
+  color: white;
+  background-color: rgb(224, 125, 29);
+}
+
+.darkgray {
+  background-color: rgb(190, 191, 194);
+}
+
+.border {
+  box-shadow: inset 0 0 0 1px #000;
+}

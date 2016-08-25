@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon 0.1 CSS-Box</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="sass/style.min.css">
+  </head>
+  <body>
+<div id="calculator">
+    <div class="row" id="row1">
+      <div id="display">0
+      </div>
+    </div>
+    <div class="row" id="row2">
+      <div class="button gray" id="ac">AC
+      </div>
+      <div class="button gray" id="c">C
+      </div>
+      <div class="button gray" id="plusMinus">+/&minus;
+      </div>
+      <div class="button gray" id="percent">%
+      </div>
+      <div data-operand="/" class="button orange operand">÷
+      </div>
+    </div>
+    <div class="row" id ="row3">
+      <div data-number="7" class="button number gray">7
+      </div>
+      <div data-number="8" class="button number gray">8
+      </div>
+      <div data-number="9" class="button number gray">9
+      </div>
+      <div data-operand="*" class="button orange operand">&times;
+      </div>
+    </div>
+    <div class="row" id="row4">
+      <div data-number="4" class="button number gray">4
+      </div>
+      <div data-number="5" class="button number gray">5
+      </div>
+      <div data-number="6" class="button number gray">6
+      </div>
+      <div data-operand="-" class="button orange operand">&minus;
+      </div>
+    </div>
+    <div class="row" id="row5">
+      <div data-number="1" class="button number gray">1
+      </div>
+      <div data-number="2" class="button number gray">2
+      </div>
+      <div data-number="3" class="button number gray">3
+      </div>
+      <div data-operand="+" class="button orange operand">+
+      </div>
+    </div>
+    <div class="row" id="row6">
+      <div data-number="0" class="button number gray" id="zero">0
+      </div>
+      <div data-number="." class="button number gray">.
+      </div>
+      <div data-operand="=" class="button orange operand">=
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
