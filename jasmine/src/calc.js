@@ -6,24 +6,26 @@ var Calculator = function() {
     '+': (x, y) => x + y,
     '-': (x, y) => x - y,
     '*': (x, y) => x * y,
-    '/': (x, y) => x / y;
+    '/': (x, y) => x / y
   },
 
   processOperand = function(e) {
-    console.log(e);
+    console.log('target', e.target);
+    console.log(this);
+    console.log($(this));
+  }
+
+  return {
+    processOperand: processOperand
   }
 };
 
-  return {
-    calculate: calculate;
-    processOperand: processOperand
-  }
-}
+window.onload = function() {
+  $('#c').hide(); //AC and C are the same button; they toggle visiblity
 
-window.onloadfunction() {
-  $("#c").hide(); //AC and C are the same button; they toggle visiblity
-  Calculator();
+  var calc = Calculator();
 
   // Event handlers
-  $('.operand').on('click', processOperand);
+  $('.operand').on('click', calc.processOperand);
+
 }
