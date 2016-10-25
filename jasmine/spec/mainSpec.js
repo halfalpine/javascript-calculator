@@ -1,5 +1,5 @@
 describe("Calculator", function() {
-  it("Completes basic functions", function() {
+  it("Loads the suite", function() {
     expect(true).toBe(true);
   });
 });
