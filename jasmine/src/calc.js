@@ -21,6 +21,7 @@ var Calculator = function() {
 }
 
 window.onloadfunction() {
+  $("#c").hide(); //AC and C are the same button; they toggle visiblity
   Calculator();
 
   // Event handlers
